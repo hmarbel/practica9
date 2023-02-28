@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      html {
+        font-family: "Montserrat", sans-serif;
+      }
+      .header {
+        background-color: #18151a;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #ffcb00;
+        color: #18151a;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 8px;
+      }
+      .menu a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .menu a:active,
+      .menu a:visited,
+      .menu a:link {
+        color: #18151a;
+      }
+      .menu li:hover {
+        background-color: #ffedaa;
+        cursor: pointer;
+      }
+
+      .content div {
+        border-radius: 12px;
+      }
+
+      .content h3 {
+        color: #18151a;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      .content #introduction {
+        background-color: #ebebeb;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+      }
+
+      .content #introduction video {
+        border-radius: 12px;
+      }
+
+      .content #location {
+        background-color: #ebebeb;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .content #location iframe {
+        border-radius: 12px;
+      }
+
+      .content #info {
+        background-color: #ebebeb;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .content #subinfo {
+        background-color: #ebebeb;
+        padding: 10px;
+      }
+
+      .content #subinfo h4 {
+        color: #ffcb00;
+        margin-top: 5px;
+      }
+
+      .content #subinfo h5 {
+        color: gray;
+        margin-top: 5px;
+      }
+
+      .content #subinfo p {
+        color: darkgrey;
+        margin-top: 0px;
+      }
+
+      .content #fv h1 {
+        margin-top: 0px;
+        color: white;
+      }
+
+      .content #fv #content {
+        background-color: #2f3136;
+        max-width: 500px;
+        height: 100vh;
+        margin-top: 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content #fv p {
+        background-color: #202225;
+        color: #9c9ea2;
+        margin-top: -20px;
+      }
+
+      .content #li1 {
+        color: #e06c75;
+      }
+
+      .content #li2 {
+        color: #98c379;
+      }
+
+      .content #li3 {
+        color: #43a3ef;
+      }
+
+      .content #li4 {
+        color: #d19a66;
+      }
+
+      .content #li5 {
+        color: #a074c4;
+      }
+
+      .aside {
+        border-radius: 8px;
+        background-color: #ffcb00;
+        padding: 15px;
+        color: #000080;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      img {
+        border-radius: 8px;
+        content: url("media/img1.jpg");
+      }
+
+      .footer {
+        background-color: #18151a;
+        color: #ffcb00;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+
+        img {
+          content: url("media/img2.jpg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Prácticas</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+          <li>
+            <a href="https://hmarbel.github.io/practica1/" target="_blank"
+              >Práctica 1</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica2/" target="_blank"
+              >Práctica 2</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica3/" target="_blank"
+              >Práctica 3</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica4/" target="_blank"
+              >Práctica 4</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica5/" target="_blank"
+              >Práctica 5</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica6/" target="_blank"
+              >Práctica 6</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica7/" target="_blank"
+              >Práctica 7</a
+            >
+          </li>
+          <li>
+            <a href="https://hmarbel.github.io/practica8/" target="_blank"
+              >Práctica 8</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6 content">
+        <div id="introduction">
+          <h3>Presentación</h3>
+          <video width="100%" height="auto" controls>
+            <source src="media/videohmarbel.mp4" type="video/mp4" />
+            El navegador no soporta videos con la etiqueta video.
+          </video>
+        </div>
+
+        <div id="location">
+          <h3>Ubicación</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1338.0128258582718!2d-97.39267004299558!3d18.46227779870306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1676917999475!5m2!1ses!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div id="info">
+          <h3>Información</h3>
+          <div id="subinfo">
+            <h4>Personal</h4>
+            <h5>Nombre</h5>
+            <p>Coré Husaí Martínez Belmonte</p>
+            <h5>Fecha de nacimiento</h5>
+            <p>22 de diciembre de 2001</p>
+            <h5>Lugar de nacimiento</h5>
+            <p>Córdoba, Veracruz</p>
+          </div>
+
+          <div id="subinfo">
+            <h4>Formación académica</h4>
+            <h5>2020 - 2024</h5>
+            <p>Tecnológico Nacional de México Campus Orizaba</p>
+            <h5>2017 - 2020</h5>
+            <p>
+              Centro de Bachillerato Tecnológico Industrial y de Servicios No.
+              229
+            </p>
+            <h5>2014 - 2017</h5>
+            <p>Técnica 21</p>
+          </div>
+
+          <div id="subinfo">
+            <h4>Experiencia laboral</h4>
+            <h5>2028 - 2032</h5>
+            <p>DevOps</p>
+            <h5>2025 - 2028</h5>
+            <p>Administrador de Bases de Datos</p>
+            <h5>2024 - 2025</h5>
+            <p>Programador Junior: C#</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 right">
+        <div class="aside">
+          <img width="100%" height="auto"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Responsive design by Coré Husaí Martínez Belmonte</p>
+    </div>
+  </body>
+</html>
